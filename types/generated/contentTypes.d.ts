@@ -452,6 +452,7 @@ export interface ApiSlugSlug extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::slug.slug'>;
     name: Schema.Attribute.String &
+      Schema.Attribute.Unique &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

@@ -15,15 +15,16 @@
     }
   },
   "attributes": {
-    "text": {
+    "name": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "unique": true
     },
-    "name": {
+    "text": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
